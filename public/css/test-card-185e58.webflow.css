@@ -1,0 +1,589 @@
+.af-view .af-class-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #000;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  font-family: Poppins, sans-serif;
+  color: #000;
+}
+
+.af-view .af-class-card__inner {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 90%;
+  padding: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#333), to(#2c2b2b));
+  background-image: linear-gradient(90deg, #333, #2c2b2b);
+  color: #333;
+}
+
+.af-view .af-class-card__title {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 48px;
+  margin-bottom: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #0e0e0e;
+}
+
+.af-view .af-class-card__image {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #00a023;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  color: #333;
+}
+
+.af-view .af-class-card__body {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  z-index: 10;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: #00101e;
+}
+
+.af-view .af-class-card__gradient {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(36%, #fbff00), color-stop(75%, #05f), to(#9d00ff));
+  background-image: linear-gradient(90deg, red, #fbff00 36%, #05f 75%, #9d00ff);
+  -webkit-filter: saturate(43%) blur(10px);
+  filter: saturate(43%) blur(10px);
+  -webkit-transform: rotate(11deg) scale3d(0.6, 1.1, 1);
+  transform: rotate(11deg) scale3d(0.6, 1.1, 1);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.af-view .af-class-card__gradient.af-class-inner {
+  opacity: 0.3;
+  -webkit-filter: saturate(60%) blur(25px);
+  filter: saturate(60%) blur(25px);
+}
+
+.af-view .af-class-card__gradient.af-class-outer {
+  z-index: 0;
+  opacity: 0.2;
+  -webkit-filter: brightness(116%) saturate(59%) blur(10px);
+  filter: brightness(116%) saturate(59%) blur(10px);
+}
+
+.af-view .af-class-card__inner-mask {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 90%;
+  -ms-flex: 0 90%;
+  flex: 0 90%;
+  border-radius: 20px;
+  background-color: #00101e;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.af-view .af-class-card__inner-mask.af-class-small {
+  left: 10px;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  -webkit-flex-basis: 68%;
+  -ms-flex-preferred-size: 68%;
+  flex-basis: 68%;
+}
+
+.af-view .af-class-card__inner-mask.af-class-image {
+  left: 20px;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  -webkit-flex-basis: 68%;
+  -ms-flex-preferred-size: 68%;
+  flex-basis: 68%;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.af-view .af-class-card__content {
+  position: relative;
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  padding: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 5px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  color: #fff;
+}
+
+.af-view .af-class-card__content.af-class-align-center {
+  text-align: center;
+}
+
+.af-view .af-class-card__border {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  z-index: -1;
+  overflow: hidden;
+  background-color: #0f0f0f;
+}
+
+.af-view .af-class-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 357px;
+  height: 498px;
+  padding: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: #00101e;
+}
+
+.af-view .af-class-stat {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.af-view .af-class-card__sheen {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1;
+  background-image: linear-gradient(135deg, hsla(0, 0%, 100%, 0) 39%, #fff 43%, #fff 50%, #fff 58%, hsla(0, 0%, 100%, 0) 62%);
+  opacity: 0.1;
+  -webkit-filter: blur(17px);
+  filter: blur(17px);
+}
+
+.af-view .af-class-title-text {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.af-view .af-class-character {
+  position: relative;
+  left: auto;
+  top: auto;
+  right: auto;
+  bottom: -5%;
+  z-index: 10;
+  width: 350px;
+  max-width: none;
+}
+
+.af-view .af-class-character.af-class-filter {
+  z-index: 1;
+  opacity: 0.31;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.af-view .af-class-card__shadow {
+  position: absolute;
+  left: -2%;
+  top: -2%;
+  right: -2%;
+  bottom: -2%;
+  z-index: 2;
+  border: 11px solid #000;
+  -webkit-filter: blur(6px);
+  filter: blur(6px);
+}
+
+.af-view .af-class-background {
+  position: absolute;
+  left: -10%;
+  width: 120%;
+  max-width: none;
+  -webkit-filter: saturate(118%);
+  filter: saturate(118%);
+}
+
+.af-view .af-class-card_title {
+  position: absolute;
+  left: 0%;
+  top: -60%;
+  right: 0%;
+  bottom: auto;
+  z-index: 3;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#00101e));
+  background-image: linear-gradient(180deg, transparent, #00101e);
+  font-family: vox-round, sans-serif;
+  color: #af00e4;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 20px #00101e, 1px 1px 10px #00101e;
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
+}
+
+.af-view .af-class-div-block-9 {
+  position: absolute;
+  left: 0%;
+  top: -15%;
+  right: 0%;
+  bottom: auto;
+  z-index: 50;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform: scale3d(1, 1, 1.5);
+  transform: scale3d(1, 1, 1.5);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.af-view .af-class-heading-8 {
+  position: relative;
+  display: inline-block;
+  margin: 0px 5px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #f70;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 10px;
+  line-height: 10px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.af-view .af-class-card__inner-_rarity {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 44px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #af00e4;
+  color: #333;
+}
+
+.af-view .af-class-card_rarity {
+  position: relative;
+  z-index: 15;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  color: #fff;
+}
+
+.af-view .af-class-card_info {
+  position: absolute;
+  left: 0%;
+  top: -10%;
+  right: 0%;
+  bottom: auto;
+  z-index: 5;
+}
+
+.af-view .af-class-card_info_wrap {
+  position: relative;
+  z-index: 50;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform: scale3d(1, 1, 1.5);
+  transform: scale3d(1, 1, 1.5);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.af-view .af-class-card_type {
+  position: relative;
+  display: inline-block;
+  margin: 0px 5px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: #af00e4;
+  color: #00101e;
+  font-size: 10px;
+  line-height: 10px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.af-view .af-class-card_info_line {
+  position: relative;
+  bottom: 10px;
+  z-index: 6;
+  width: 280px;
+  height: 2px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #af00e4;
+}
+
+.af-view .af-class-logo {
+  position: static;
+  left: 5px;
+  top: 5px;
+  right: auto;
+  bottom: auto;
+  z-index: 150;
+}
+
+.af-view .af-class-card_logo {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  z-index: 20;
+  padding: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #00101e;
+}
+
+.af-view .af-class-card_rarity_description {
+  font-family: vox-round, sans-serif;
+  color: #00101e;
+  font-size: 8px;
+  line-height: 10px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+}
+
+.af-view .af-class-card_rarity_level {
+  font-family: vox-round, sans-serif;
+  color: #00101e;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+}
+
+.af-view .af-class-card_stat_type {
+  font-family: vox-round, sans-serif;
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 10px;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+}
+
+.af-view .af-class-stats_number {
+  font-family: vox-round, sans-serif;
+  color: #af00e4;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
